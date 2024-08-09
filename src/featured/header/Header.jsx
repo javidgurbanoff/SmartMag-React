@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { GiHamburgerMenu } from 'react-icons/gi';
+import { RxHamburgerMenu } from "react-icons/rx";
 import { FaRegMoon } from 'react-icons/fa';
 import { IoSearch, IoClose } from 'react-icons/io5';
 
@@ -18,7 +18,8 @@ const Header = () => {
   return (
     <div>
       <div className="flex items-center p-4 w-full max-w-screen-xl mx-auto">
-        <GiHamburgerMenu
+        <RxHamburgerMenu
+
           className="w-7 h-7 text-black mr-4 cursor-pointer hover:text-blue-600"
           aria-label="Menu"
           onClick={toggleSidebar}
