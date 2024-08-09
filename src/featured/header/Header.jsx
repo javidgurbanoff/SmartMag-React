@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { FaRegMoon } from 'react-icons/fa';
-import { IoSearch } from 'react-icons/io5';
-import { IoClose } from 'react-icons/io5';
+import { IoSearch, IoClose } from 'react-icons/io5';
 
 const Header = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
@@ -76,13 +75,21 @@ const Header = () => {
 
       {/* Sidebar */}
       <div
-        className={`fixed top-0 left-0 h-full w-64 bg-gray-800 text-white transition-transform transform ${
+        className={`fixed top-0 left-0 h-full w-64 bg-black text-white transition-transform transform ${
           isSidebarOpen ? 'translate-x-0' : '-translate-x-full'
         } shadow-lg z-50`}
       >
         <div className="flex items-center justify-between p-4">
-          <h2 className="text-xl font-bold">Menu</h2>
-          <IoClose className="w-6 h-6 cursor-pointer" onClick={toggleSidebar} aria-label="Close Sidebar" />
+          <img
+            src="https://smartmag.theme-sphere.com/tech-blog/wp-content/uploads/sites/35/2022/11/techblog-logo-dark@2x.png"
+            alt="Sidebar Logo"
+            className="w-[120px] h-auto"
+          />
+          <IoClose
+            className="w-6 h-6 cursor-pointer"
+            onClick={toggleSidebar}
+            aria-label="Close Sidebar"
+          />
         </div>
         <ul className="mt-4">
           <li className="px-4 py-2 hover:bg-gray-700 cursor-pointer">Home</li>
