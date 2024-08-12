@@ -4,6 +4,8 @@ import { FaRegMoon } from 'react-icons/fa';
 import { IoSearch, IoClose } from 'react-icons/io5';
 import { Link } from 'react-router-dom';
 
+
+
 const Header = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
   const [isDropdownOpen, setDropdownOpen] = useState(false);
