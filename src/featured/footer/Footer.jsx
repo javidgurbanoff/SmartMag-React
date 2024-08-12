@@ -8,10 +8,9 @@ const Footer = () => {
     <div className="p-0 bg-[#191919] w-full">
       <div className="w-full flex bg-[#161616] py-10">
         <div className="flex pl-8 pr-8">
-          {/* Left part */}
           <div className="flex flex-col gap-4 w-1/2 pl-[105px] ">
             <h5 className="text-white mb-4 text-lg">Most Popular</h5>
-            <div className="flex flex-col gap-4  divide-y">
+            <div className="flex flex-col gap-4  divide-y divide-gray-600">
               <div className="flex items-center gap-4 w-[380px] h-[75px] ">
                 <img
                   src="https://smartmag.theme-sphere.com/tech-blog/wp-content/uploads/sites/35/2021/01/kamil-s-SuPAbuuK7f4-unsplash-150x100.jpg"
@@ -19,10 +18,10 @@ const Footer = () => {
                   className="w-[97px] h-[74px] object-cover rounded-[10px]"
                 />
                 <div>
-                  <p className="text-white text-sm">
+                  <p className="text-white text-sm hover:text-[#3C3FDE] ">
                     Popular New Xbox Game Pass Game Being Review Bombed With “Os”
                   </p>
-                  <div className="flex items-center text-gray-400 text-xs">
+                  <div className="flex items-center text-gray-400 text-xs ">
                     <p>Jan 14, 2021</p>
                     <span className="flex items-center text-red-600 ml-2">
                       <ImFire className="mr-1" /> 7,792 Views
@@ -31,14 +30,14 @@ const Footer = () => {
                 </div>
               </div>
 
-              <div className="flex items-center gap-4 w-[380px] h-[75px]">
+              <div className="flex items-center gap-4 w-[380px] h-[75px] pt-5">
                 <img
                   src="https://smartmag.theme-sphere.com/tech-blog/wp-content/uploads/sites/35/2021/01/jonathan-kemper-poSms2EzfNY-unsplash-150x100.jpg"
                   alt="Samsung MicroLED"
                   className="w-[97px] h-[74px] object-cover rounded-[10px]"
                 />
                 <div>
-                  <p className="text-white text-sm">
+                  <p className="text-white text-sm hover:text-[#3C3FDE]">
                     Samsung is Developing Bright MicroLED on Displays for AR Headsets
                   </p>
                   <div className="flex items-center text-gray-400 text-xs">
@@ -50,14 +49,14 @@ const Footer = () => {
                 </div>
               </div>
 
-              <div className="flex items-center gap-4 w-[380px] h-[75px]">
+              <div className="flex items-center gap-4 w-[380px] h-[75px] pt-5">
                 <img
                   src="https://smartmag.theme-sphere.com/tech-blog/wp-content/uploads/sites/35/2021/01/0247d91565b69ed9ddba4ec59ac97963-1-150x86.jpg"
                   alt="Mortal Kombat Announcement"
                   className="w-[97px] h-[74px] object-cover rounded-[10px]"
                 />
                 <div>
-                  <p className="text-white text-sm">
+                  <p className="text-white text-sm hover:text-[#3C3FDE]">
                     Warner Bros. Games Announces Mortal Kombat: Onslaught
                   </p>
                   <div className="flex items-center text-gray-400 text-xs">
@@ -71,10 +70,9 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Right part */}
           <div className="flex flex-col gap-4 w-1/2">
             <h5 className="text-white mb-4 text-lg">Our Picks</h5>
-            <div className="flex flex-col gap-4  divide-y ">
+            <div className="flex flex-col gap-4 divide-y divide-gray-600">
               <div className="flex items-center gap-4">
                 <img
                   src="https://smartmag.theme-sphere.com/tech-blog/wp-content/uploads/sites/35/2022/11/thisisengineering-raeng-a7A9O5htrKs-unsplash-150x100.jpg"
@@ -91,7 +89,7 @@ const Footer = () => {
                 </div>
               </div>
 
-              <div className="flex items-center gap-4 w-[380px] h-[75px]">
+              <div className="flex items-center gap-4 w-[380px] h-[75px] pt-5">
                 <img
                   src="https://smartmag.theme-sphere.com/tech-blog/wp-content/uploads/sites/35/2022/11/Depositphotos_242235046_xl-2015-1-150x85.jpg"
                   alt="Mortal Kombat Announcement"
@@ -107,7 +105,7 @@ const Footer = () => {
                 </div>
               </div>
 
-              <div className="flex items-center gap-4 w-[380px] h-[75px]">
+              <div className="flex items-center gap-4 w-[380px] h-[75px] pt-5">
                 <img
                   src="https://smartmag.theme-sphere.com/tech-blog/wp-content/uploads/sites/35/2022/11/remy_loz-3vVzdb8KKIw-unsplash-150x100.jpg"
                   alt="Mortal Kombat Announcement"
@@ -152,7 +150,6 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Footer Links and Social Icons */}
       <div className="w-full h-[266px] bg-[#070707] flex flex-col justify-center items-center gap-4">
         <div className="text-white flex gap-6 text-lg">
           <div className="p-3 bg-[#333] rounded-full cursor-pointer hover:text-blue-600">

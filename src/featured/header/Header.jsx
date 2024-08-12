@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { RxHamburgerMenu } from "react-icons/rx";
 import { FaRegMoon } from 'react-icons/fa';
 import { IoSearch, IoClose } from 'react-icons/io5';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
@@ -19,7 +20,6 @@ const Header = () => {
     <div>
       <div className="flex items-center p-4 w-full max-w-screen-xl mx-auto">
         <RxHamburgerMenu
-
           className="w-7 h-7 text-black mr-4 cursor-pointer hover:text-blue-600"
           aria-label="Menu"
           onClick={toggleSidebar}
@@ -31,7 +31,7 @@ const Header = () => {
         />
         <ul className="flex flex-grow space-x-6 mx-8 font-bold pt-2">
           <li className="relative cursor-pointer pb-0">
-            <span className="hover:border-b-2 hover:border-blue-500 pb-5">Home</span>
+            <Link to="/" className="hover:border-b-2 hover:border-blue-500 pb-5">Home</Link>
           </li>
           <li
             className="relative cursor-pointer pb-2"
@@ -40,7 +40,7 @@ const Header = () => {
           >
             <span className="hover:border-b-2 hover:border-blue-500 pb-5">Features</span>
             {isDropdownOpen && (
-              <ul className="absolute top-full left-0 mt-2 bg-white shadow-lg rounded-md py-2 z-50 w-64">
+              <ul className="absolute top-full left-0 mt-6 bg-white shadow-lg rounded-md py-2 z-50 w-64">
                 <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">50+ Unique Demos</li>
                 <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Post Styles</li>
                 <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Category Layouts</li>
@@ -55,10 +55,7 @@ const Header = () => {
             )}
           </li>
           <li className="relative cursor-pointer pb-2">
-            <span className="hover:border-b-2 hover:border-blue-500 pb-5">Technology</span>
-          </li>
-          <li className="relative cursor-pointer pb-2">
-            <span className="hover:border-b-2 hover:border-[#9b51e0] pb-5">Gadgets</span>
+            <Link to="/gadgets" className="hover:border-b-2 hover:border-[#9b51e0] pb-5">Gadgets</Link>
           </li>
           <li className="relative cursor-pointer pb-2">
             <span className="hover:border-b-2 hover:border-[#61CE70] pb-5">Phones</span>
@@ -73,8 +70,6 @@ const Header = () => {
         <FaRegMoon className="w-5 h-5 text-gray-600 ml-4 cursor-pointer" aria-label="Dark Mode" />
         <IoSearch className="w-5 h-5 text-gray-600 ml-4 cursor-pointer" aria-label="Search" />
       </div>
-
-      {/* Sidebar */}
       <div
         className={`fixed top-0 left-0 h-full w-64 bg-black text-white transition-transform transform ${
           isSidebarOpen ? 'translate-x-0' : '-translate-x-full'
