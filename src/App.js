@@ -4,6 +4,7 @@ import Header from "./featured/header/Header";
 import Footer from "./featured/footer/Footer";
 import Main from "./components/Layout";
 import Gadgets from "./pages/Gadgets";
+import VideoCards from "./components/VideoCards";
 
 function App() {
   return (
